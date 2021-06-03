@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Hobby({ fav, img }) {
   return (
     <div>
@@ -6,6 +8,10 @@ function Hobby({ fav, img }) {
     </div>
   );
 }
+Hobby.propTypes = {
+  fav: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+};
 const favList = [
   {
     id: 1,
