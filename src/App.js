@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-class App extends React.Component {
+class App extends Component {
   state = {
     isLoading: true,
     movies: [],
