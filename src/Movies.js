@@ -1,7 +1,16 @@
 import PropTypes from "prop-types";
+import { MovieStyle } from "./styles/MovieStyle";
 
-function Movie({ id, year, summary, poster, title }) {
-  return <h2>{title}</h2>;
+function Movie({ year, poster, title }) {
+  return (
+    <MovieStyle>
+      <a href="#">
+        <img src={poster} alt={title} title={title} />
+        <h3 className="movie__title">{title}</h3>
+        <h5 className="movie__year">{year}</h5>
+      </a>
+    </MovieStyle>
+  );
 }
 
 Movie.propTypes = {
