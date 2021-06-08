@@ -18,6 +18,8 @@ class App extends Component {
     } = await axios.get(
       "https://yts-proxy.nomadcoders1.now.sh/list_movies.json?sort_by=like_count"
     );
+    console.log(movies[0].background_image_original);
+
     this.setState({ movies, isLoading: false });
   };
   componentDidMount() {
@@ -51,6 +53,7 @@ class App extends Component {
                   title={movie.title}
                   summary={movie.summary}
                   poster={movie.medium_cover_image}
+                  background={movie.background_image_original}
                 />
               ))}
             </Movies>
