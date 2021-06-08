@@ -35,7 +35,7 @@ class App extends Component {
             <h3>NETFLEX</h3>
           </NavTitle>
           <div>
-            <p>Login!</p>
+            <p>Login</p>
           </div>
         </Navigator>
         <Container>
