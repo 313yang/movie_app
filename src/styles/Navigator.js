@@ -4,7 +4,7 @@ export const Navigator = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 30px;
+  margin: 20px 50px;
   height: 50px;
   color: white;
 `;

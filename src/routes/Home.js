@@ -16,7 +16,6 @@ class Home extends Component {
     } = await axios.get(
       "https://yts-proxy.nomadcoders1.now.sh/list_movies.json?sort_by=like_count"
     );
-    console.log(movies[0].title);
 
     this.setState({ movies, isLoading: false });
   };

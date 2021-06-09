@@ -1,15 +1,29 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import { MovieStyle } from "../styles/MovieStyle";
 
-function Movie({ year, poster, title, genres }) {
+function Movie({ id, year, poster, title, genres, summary }) {
   return (
-    <MovieStyle>
-      <a href="/#/about">
-        <img src={poster} alt={title} title={title} />
-        <h3 className="movie__title">{title}</h3>
-        <h5 className="movie__year">{year}</h5>
-      </a>
-    </MovieStyle>
+    <Link
+      to={{
+        pathname: `/movie/${id}`,
+        state: {
+          year,
+          title,
+          summary,
+          poster,
+          genres,
+        },
+      }}
+    >
+      <MovieStyle>
+        <div>
+          <img src={poster} alt={title} title={title} />
+          <h3 className="movie__title">{title}</h3>
+          <h5 className="movie__year">{year}</h5>
+        </div>
+      </MovieStyle>
+    </Link>
   );
 }
 
