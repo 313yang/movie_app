@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
 body{
   margin:0;
   padding:0;
-  background-color:#2f2f2f;
+  background-color:#1f1f1f;
   font-family: 'Noto Sans TC', sans-serif;
 }
 a{
