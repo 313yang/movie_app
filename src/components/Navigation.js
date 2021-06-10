@@ -5,9 +5,7 @@ function Navigation() {
   return (
     <Navigator>
       <Link to="/">
-        <NavTitle>
-          <h1>NETFLEX</h1>
-        </NavTitle>
+        <NavTitle>NETFLEX</NavTitle>
       </Link>
       <div>
         <Link to="/login">Login</Link>

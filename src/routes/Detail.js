@@ -1,10 +1,9 @@
 import { Component } from "react";
-import MovieDetail from "../styles/MovieDetale";
+import { MovieDetail, MovieInfo } from "../styles/MovieDetale";
 
 class Detail extends Component {
   componentDidMount() {
     const { location, history } = this.props;
-    console.log(location);
     if (location.state === undefined) {
       history.push("/");
     }
@@ -21,14 +20,16 @@ class Detail extends Component {
           </div>
           <div>
             <img src={state.poster} alt={state.title} title={state.title} />
-            <h1>{state.title}</h1>
-            <h3>{state.year}</h3>
-            <ul>
-              {state.genres.map((genre, index) => (
-                <li key={index}>{genre}</li>
-              ))}
-            </ul>
-            <p>{state.summary}</p>
+            <MovieInfo>
+              <h1>{state.title}</h1>
+              <h3>{state.year}</h3>
+              <ul>
+                {state.genres.map((genre, index) => (
+                  <li key={index}>🍿 {genre}</li>
+                ))}
+              </ul>
+              <p>{state.summary}</p>
+            </MovieInfo>
           </div>
         </MovieDetail>
       );

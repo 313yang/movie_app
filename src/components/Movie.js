@@ -20,9 +20,9 @@ function Movie({ bg, id, year, poster, title, genres, summary }) {
       <MovieStyle>
         <div>
           <img src={poster} alt={title} title={title} />
-          <h3 className="movie__title">{title}</h3>
-          <h5 className="movie__year">{year}</h5>
         </div>
+        <h3 className="movie__title">{title}</h3>
+        <h5 className="movie__year">{year}</h5>
       </MovieStyle>
     </Link>
   );
