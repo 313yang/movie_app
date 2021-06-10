@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { MovieStyle } from "../styles/MovieStyle";
 
-function Movie({ id, year, poster, title, genres, summary }) {
+function Movie({ bg, id, year, poster, title, genres, summary }) {
   return (
     <Link
       to={{
@@ -13,6 +13,7 @@ function Movie({ id, year, poster, title, genres, summary }) {
           summary,
           poster,
           genres,
+          bg,
         },
       }}
     >
@@ -33,6 +34,7 @@ Movie.propTypes = {
   summary: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
   year: PropTypes.number.isRequired,
+  bg: PropTypes.string.isRequired,
   genres: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 export default Movie;

@@ -41,6 +41,7 @@ class Home extends Component {
                 summary={movie.summary}
                 poster={movie.medium_cover_image}
                 genres={movie.genres}
+                bg={movie.background_image_original}
               />
             ))}
           </Movies>

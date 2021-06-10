@@ -4,8 +4,9 @@ export const Navigator = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 50px;
-  height: 50px;
+  padding: 5px 50px;
+  width: 100%;
+  background-color: #1f1f1f;
   color: white;
 `;
 export const NavTitle = styled.div`
