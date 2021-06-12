@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Movie from "../components/Movie";
 import { Container, Movies } from "../styles/MovieSection";
+import Loading from "../styles/Loading";
 
 class Home extends Component {
   state = {
@@ -27,9 +28,9 @@ class Home extends Component {
     return (
       <Container>
         {isLoading ? (
-          <div>
-            <span className="loader__text">Loading...</span>
-          </div>
+          <Loading>
+            <div>Loading...</div>
+          </Loading>
         ) : (
           <Movies>
             {movies.map((movie) => (

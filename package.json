@@ -36,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "movie website with react",
+  "main": "index.js",
+  "repository": "https://github.com/313yang/movie_app",
+  "author": "yangbreoll <78190786+yangbreoll@users.noreply.github.com>",
+  "license": "MIT"
 }

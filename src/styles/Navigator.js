@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Navigator = styled.nav`
   font-family: "Bebas Neue", cursive;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +18,7 @@ export const Navigator = styled.nav`
   }
 `;
 export const NavTitle = styled.h1`
-  color: #ff2727;
+  color: red;
   font-weight: 800;
   font-size: 40px;
   margin: 0;

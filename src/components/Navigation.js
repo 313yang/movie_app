@@ -8,7 +8,7 @@ function Navigation() {
         <NavTitle>NETFLEX</NavTitle>
       </Link>
       <div>
-        <Link to="/login">Login</Link>
+        <Link to="/login">Sign In</Link>
       </div>
     </Navigator>
   );

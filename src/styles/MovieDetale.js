@@ -33,7 +33,7 @@ export const MovieInfo = styled(MovieDetail)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  width: 60%;
   margin-left: 50px;
   margin-top: 0px;
   padding: 50px;
